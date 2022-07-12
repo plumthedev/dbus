@@ -1,0 +1,44 @@
+{
+    "name": "plumthedev/dbus",
+    "description": "Laravel repository pattern done in good way.",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "8.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.24",
+        "slevomat/coding-standard": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dbus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dbus\\Tests\\": "tests/",
+            "Dbus\\Examples\\": "examples/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kacper Pruszyński",
+            "email": "kacper.pruszynski@proexe.pl"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dbus\\Provider\\DbusServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
